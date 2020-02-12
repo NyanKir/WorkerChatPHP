@@ -1,0 +1,223 @@
+body{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+main{
+    width: 150px;
+    background-image: linear-gradient(45deg, #bac8e0 0%, #6a85b6 100%);
+}
+.menu_user{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.menu_user ul{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding-inline-start: 0;
+}
+.menu_user ul li{
+    text-align: center;
+    color: white;
+    font-family: 'Tahoma', sans-serif;
+    font-size: 1.3em;
+    margin-bottom: 1.3em;
+    justify-content: center;
+}
+.menu_user ul li:last-child{
+    margin-top: auto;
+
+}
+.window_user{
+    border:3px solid #364d66;
+    margin-top: 1em;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://images.wallpaperscraft.ru/image/lico_usy_volosy_66202_1920x1080.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 50px;
+    overflow: hidden;
+    width: 75px;
+    height: 75px;
+    transition: .3s;
+}
+.window_user:hover{
+    border:3px solid white;
+    transition: .3s;
+}
+.menu_user i{
+    font-size: 28px;
+    width: 100%;
+}
+section{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-image: url("https://images.wallpaperscraft.ru/image/grumpy_cat_sous_tardar_serdityj_kotik_art_98561_1920x1080.jpg");
+}
+.menu_user a{
+    text-decoration: none;
+    color: #364d66;
+ }
+.menu_user a:hover{
+    color: white;
+    transition: .3s;
+}
+.num_chats{
+    width: 30%;
+    height: auto;
+}
+.num_chats ul{
+    margin: 1em;
+    list-style: none;
+    padding-inline-start: 0;
+}
+.num_chats ul li{
+    width: 100%;
+    background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+    box-sizing: border-box;
+}
+.num_chats ul li p{
+    font-size: 24px;
+    font-family: 'Tahoma', sans-serif;
+}
+.window_chat{
+    background: #2a569d;
+    width: 100%;
+    height: auto;
+}
+.add_form{
+    box-shadow: 0 0 3px black;
+    position: absolute;
+    display: none;
+    padding: 1em;
+    border-radius: 20px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 500px;
+    max-width: 100%;
+    height: 600px;
+    margin: auto;
+    background: gray;
+    flex-direction: column;
+}
+.add_form form{
+    font-family: 'Tahoma', sans-serif;
+    flex-direction: column;
+    display: flex;
+    font-size: 1.3em;
+}
+.add_form form div{
+    margin: .4em;
+}
+.add_form form button{
+
+    font-size: 1.6em;
+}
+.vis{
+    display: block;
+
+}
+#otvet{
+    width: 100%;
+    height: 85%;
+    overflow: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+
+}
+#send_dich{
+    display: flex;
+    width: 100%;
+    height: 100px;
+}
+#send_dich button{
+    margin: 1em;
+    width:30%;
+}
+#send_dich textarea{
+    margin: 1em;
+    width:70%;
+}
+
+.head_otvet{
+    width: 100%;
+    background-image: linear-gradient(45deg, #6a85b6 0%, #bac8e0 100%);
+    text-align: center;
+    font-family: 'Tahoma', sans-serif;
+    font-size: 30px;
+    height: 5%;
+}
+.messang{
+    margin: 1em;
+    box-sizing: border-box;
+    display: flex;
+    width: 500px;
+    max-width: 100%;
+}
+.messang div{
+    background: lightslategrey;
+    padding: 1em;
+    margin: 1em;
+    position: relative;
+    border-radius: 0 20px 20px 20px;
+}
+.messangme div{
+    background: powderblue;
+    padding: 1em;
+    margin: 1em;
+    position: relative;
+    border-radius: 20px 0  20px 20px;
+}
+.messang .user_text{
+    word-break: break-all;
+    width: 100%;
+}
+.messang .user_date{
+    word-break: break-all;
+    width: 100%;
+    text-align: right;
+}
+.messangme{
+    margin: 1em 1em 1em auto;
+    display: flex;
+    width: 500px;
+    max-width: 100%;
+    justify-content: flex-end;
+    padding: 1em;
+    position: relative;
+}
+.newf{
+    padding: 1em;
+    display: none;
+    width: 300px;
+    height: 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin:auto;
+    background: #6a85b6;
+    z-index: 99999;
+    box-shadow: 0 0 3px black;
+}
+.viss{
+    display: flex;
+}

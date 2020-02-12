@@ -1,0 +1,160 @@
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.door {
+    overflow: hidden;
+    z-index: 9999;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    height: auto;
+    transition: .7s ease-out;
+    background-image: url("https://images.wallpaperscraft.ru/image/gory_luna_les_139359_1920x1080.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+}
+
+.dor-top {
+    position: relative;
+    top: 30%;
+    text-align: center;
+}
+
+.door_content {
+    font-family: 'Tahoma', sans-serif;
+    text-align: center;
+    color: black;
+}
+
+#changedoor {
+    text-transform: uppercase;
+    border-radius: 40px;
+    width: 125px;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+}
+button{
+    outline: none;
+}
+.wrap_form {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+
+.wrap_content_form {
+    display: flex;
+    height: 100%;
+}
+
+/*Левая сторона*/
+.wrap_content_form .wrap_all_form {
+    position: relative;
+    width: 50%;
+    height: 70%;
+}
+.inputs{
+    width: 100%;
+}
+.inputs label{
+    font-size: 14px;
+    font-family: 'Tahoma', sans-serif;
+    color:red;
+    position: relative;
+    right: calc(15%/2);
+}
+
+.wrap_all_form .left_form {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+}
+
+/*Правая сторона*/
+.wrap_all_form .right_form {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+}
+
+.wrap_content_form input {
+    box-shadow: 0 0  4px rgba(0,0,0,0.8 );
+    font-size: 1.3em;
+    font-family: 'Arial', 'FontAwesome', sans-serif;
+    width: calc(50%/2);
+    height: calc(50%/6);
+    margin: .5em auto 0 auto;
+    padding: 1em;
+    display: block;
+    border: none;
+    background: rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+
+input[type="text"] {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.wrap_content_form input::placeholder {
+    font-size: .8em;
+}
+
+.wrap_content_form button {
+    margin-top: 1em;
+    text-transform: uppercase;
+    color: white;
+    background: #2a569d;
+    border: none;
+    border-radius: 50px;
+    width: 125px;
+    height: 50px;
+    transition: .2s;
+}
+.wrap_content_form button:hover{
+    text-transform: uppercase;
+    color: #2a569d;
+    transition: .2s;
+    background: transparent;
+    border: 1px solid #2a569d;
+    border-radius: 50px;
+    width: 125px;
+    height: 50px;
+}
+
+h1 {
+    font-family: 'Tahoma', sans-serif;
+    color: #2a569d;
+}
+
+/*animate*/
+.animate {
+    animation: animating 1s ease-in-out;
+}
+
+@keyframes animating {
+    0% {
+        width: 125px;
+    }
+    50%{
+        width: 155px;
+    }
+    100% {
+        width: 125px;
+    }
+}

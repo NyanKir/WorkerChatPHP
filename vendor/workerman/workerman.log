@@ -1,0 +1,101 @@
+2019-12-12 10:04:40 pid:1 Worker process terminated with ERROR: E_RECOVERABLE_ERROR "Object of class Workerman\Connection\TcpConnection could not be converted to string in C:\xampp\htdocs\mymessenger\socket\server.php on line 14"
+2019-12-12 10:20:08 pid:1 Error: Cannot use object of type Workerman\Connection\TcpConnection as array in C:\xampp\htdocs\mymessenger\socket\server.php:15
+Stack trace:
+#0 C:\xampp\htdocs\mymessenger\vendor\workerman\workerman\Worker.php(2449): {closure}(Object(Workerman\Connection\TcpConnection))
+#1 C:\xampp\htdocs\mymessenger\vendor\workerman\workerman\Events\Select.php(294): Workerman\Worker->acceptConnection(Resource id #18)
+#2 C:\xampp\htdocs\mymessenger\vendor\workerman\workerman\Worker.php(2382): Workerman\Events\Select->loop()
+#3 C:\xampp\htdocs\mymessenger\vendor\workerman\workerman\Worker.php(1353): Workerman\Worker->run()
+#4 C:\xampp\htdocs\mymessenger\vendor\workerman\workerman\Worker.php(1296): Workerman\Worker::forkWorkersForWindows()
+#5 C:\xampp\htdocs\mymessenger\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#6 C:\xampp\htdocs\mymessenger\socket\server.php(39): Workerman\Worker::runAll()
+#7 {main}
+2019-12-12 10:20:08 pid:1 Worker process terminated
+2019-12-12 12:19:45 pid:1 PDOException: SQL:INSERT INTO `letters` ( `username`,`word`,`table-id`) VALUES ( 'abc', 'efg', 'M', 13) SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1 in C:\xampp\htdocs\mymessenger\vendor\workerman\mysql\src\Connection.php:1770
+Stack trace:
+#0 C:\xampp\htdocs\mymessenger\vendor\workerman\mysql\src\Connection.php(1828): Workerman\MySQL\Connection->execute('INSERT INTO `le...', NULL)
+#1 C:\xampp\htdocs\mymessenger\socket\server.php(26): Workerman\MySQL\Connection->query('INSERT INTO `le...')
+#2 C:\xampp\htdocs\mymessenger\vendor\workerman\workerman\Connection\TcpConnection.php(658): {closure}(Object(Workerman\Connection\TcpConnection), '"{\\"type\\":\\"me...')
+#3 C:\xampp\htdocs\mymessenger\vendor\workerman\workerman\Events\Select.php(294): Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#4 C:\xampp\htdocs\mymessenger\vendor\workerman\workerman\Worker.php(2382): Workerman\Events\Select->loop()
+#5 C:\xampp\htdocs\mymessenger\vendor\workerman\workerman\Worker.php(1353): Workerman\Worker->run()
+#6 C:\xampp\htdocs\mymessenger\vendor\workerman\workerman\Worker.php(1296): Workerman\Worker::forkWorkersForWindows()
+#7 C:\xampp\htdocs\mymessenger\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#8 C:\xampp\htdocs\mymessenger\socket\server.php(40): Workerman\Worker::runAll()
+#9 {main}
+2019-12-12 12:19:45 pid:1 Worker process terminated
+2019-12-12 12:23:46 pid:1 Error: Cannot use object of type stdClass as array in C:\xampp\htdocs\mymessenger\socket\server.php:27
+Stack trace:
+#0 C:\xampp\htdocs\mymessenger\vendor\workerman\workerman\Connection\TcpConnection.php(658): {closure}(Object(Workerman\Connection\TcpConnection), Object(stdClass))
+#1 C:\xampp\htdocs\mymessenger\vendor\workerman\workerman\Events\Select.php(294): Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#2 C:\xampp\htdocs\mymessenger\vendor\workerman\workerman\Worker.php(2382): Workerman\Events\Select->loop()
+#3 C:\xampp\htdocs\mymessenger\vendor\workerman\workerman\Worker.php(1353): Workerman\Worker->run()
+#4 C:\xampp\htdocs\mymessenger\vendor\workerman\workerman\Worker.php(1296): Workerman\Worker::forkWorkersForWindows()
+#5 C:\xampp\htdocs\mymessenger\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#6 C:\xampp\htdocs\mymessenger\socket\server.php(44): Workerman\Worker::runAll()
+#7 {main}
+2019-12-12 12:23:46 pid:1 Worker process terminated
+2019-12-12 12:24:37 pid:1 PDOException: SQL:INSERT INTO `letters` ( `username`,`word`,`table-id`) VALUES ( Olya, Hello, 10) SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Olya' in 'field list' in C:\xampp\htdocs\mymessenger\vendor\workerman\mysql\src\Connection.php:1770
+Stack trace:
+#0 C:\xampp\htdocs\mymessenger\vendor\workerman\mysql\src\Connection.php(1828): Workerman\MySQL\Connection->execute('INSERT INTO `le...', NULL)
+#1 C:\xampp\htdocs\mymessenger\socket\server.php(27): Workerman\MySQL\Connection->query('INSERT INTO `le...')
+#2 C:\xampp\htdocs\mymessenger\vendor\workerman\workerman\Connection\TcpConnection.php(658): {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#3 C:\xampp\htdocs\mymessenger\vendor\workerman\workerman\Events\Select.php(294): Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#4 C:\xampp\htdocs\mymessenger\vendor\workerman\workerman\Worker.php(2382): Workerman\Events\Select->loop()
+#5 C:\xampp\htdocs\mymessenger\vendor\workerman\workerman\Worker.php(1353): Workerman\Worker->run()
+#6 C:\xampp\htdocs\mymessenger\vendor\workerman\workerman\Worker.php(1296): Workerman\Worker::forkWorkersForWindows()
+#7 C:\xampp\htdocs\mymessenger\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#8 C:\xampp\htdocs\mymessenger\socket\server.php(44): Workerman\Worker::runAll()
+#9 {main}
+2019-12-12 12:24:37 pid:1 Worker process terminated
+2019-12-12 12:25:30 pid:1 Exception: You can't send(array) to client, you need to convert it to a string.  in C:\xampp\htdocs\mymessenger\vendor\workerman\workerman\Protocols\Websocket.php:236
+Stack trace:
+#0 C:\xampp\htdocs\mymessenger\vendor\workerman\workerman\Connection\TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 C:\xampp\htdocs\mymessenger\socket\server.php(32): Workerman\Connection\TcpConnection->send(Array)
+#2 C:\xampp\htdocs\mymessenger\vendor\workerman\workerman\Connection\TcpConnection.php(658): {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#3 C:\xampp\htdocs\mymessenger\vendor\workerman\workerman\Events\Select.php(294): Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#4 C:\xampp\htdocs\mymessenger\vendor\workerman\workerman\Worker.php(2382): Workerman\Events\Select->loop()
+#5 C:\xampp\htdocs\mymessenger\vendor\workerman\workerman\Worker.php(1353): Workerman\Worker->run()
+#6 C:\xampp\htdocs\mymessenger\vendor\workerman\workerman\Worker.php(1296): Workerman\Worker::forkWorkersForWindows()
+#7 C:\xampp\htdocs\mymessenger\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#8 C:\xampp\htdocs\mymessenger\socket\server.php(44): Workerman\Worker::runAll()
+#9 {main}
+2019-12-12 12:25:30 pid:1 Worker process terminated
+2019-12-12 16:37:45 pid:1 PDOException: SQL:INSERT INTO `letters` ( `username`,`word`,`table-id`,`userid`) VALUES ( 'Noraml', 'sdf', '23', '23', '') SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1 in C:\xampp\htdocs\mymessenger\vendor\workerman\mysql\src\Connection.php:1770
+Stack trace:
+#0 C:\xampp\htdocs\mymessenger\vendor\workerman\mysql\src\Connection.php(1828): Workerman\MySQL\Connection->execute('INSERT INTO `le...', NULL)
+#1 C:\xampp\htdocs\mymessenger\socket\server.php(31): Workerman\MySQL\Connection->query('INSERT INTO `le...')
+#2 C:\xampp\htdocs\mymessenger\vendor\workerman\workerman\Connection\TcpConnection.php(658): {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#3 C:\xampp\htdocs\mymessenger\vendor\workerman\workerman\Events\Select.php(294): Workerman\Connection\TcpConnection->baseRead(Resource id #28)
+#4 C:\xampp\htdocs\mymessenger\vendor\workerman\workerman\Worker.php(2382): Workerman\Events\Select->loop()
+#5 C:\xampp\htdocs\mymessenger\vendor\workerman\workerman\Worker.php(1353): Workerman\Worker->run()
+#6 C:\xampp\htdocs\mymessenger\vendor\workerman\workerman\Worker.php(1296): Workerman\Worker::forkWorkersForWindows()
+#7 C:\xampp\htdocs\mymessenger\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#8 C:\xampp\htdocs\mymessenger\socket\server.php(47): Workerman\Worker::runAll()
+#9 {main}
+2019-12-12 16:37:45 pid:1 Worker process terminated
+2019-12-12 16:38:03 pid:1 PDOException: SQL:INSERT INTO `letters` ( `username`,`word`,`table-id`,`userid`) VALUES ( 'Noraml', 'asd', '23', '23', '') SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1 in C:\xampp\htdocs\mymessenger\vendor\workerman\mysql\src\Connection.php:1770
+Stack trace:
+#0 C:\xampp\htdocs\mymessenger\vendor\workerman\mysql\src\Connection.php(1828): Workerman\MySQL\Connection->execute('INSERT INTO `le...', NULL)
+#1 C:\xampp\htdocs\mymessenger\socket\server.php(31): Workerman\MySQL\Connection->query('INSERT INTO `le...')
+#2 C:\xampp\htdocs\mymessenger\vendor\workerman\workerman\Connection\TcpConnection.php(658): {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#3 C:\xampp\htdocs\mymessenger\vendor\workerman\workerman\Events\Select.php(294): Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#4 C:\xampp\htdocs\mymessenger\vendor\workerman\workerman\Worker.php(2382): Workerman\Events\Select->loop()
+#5 C:\xampp\htdocs\mymessenger\vendor\workerman\workerman\Worker.php(1353): Workerman\Worker->run()
+#6 C:\xampp\htdocs\mymessenger\vendor\workerman\workerman\Worker.php(1296): Workerman\Worker::forkWorkersForWindows()
+#7 C:\xampp\htdocs\mymessenger\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#8 C:\xampp\htdocs\mymessenger\socket\server.php(47): Workerman\Worker::runAll()
+#9 {main}
+2019-12-12 16:38:03 pid:1 Worker process terminated
+2019-12-12 16:39:11 pid:1 PDOException: SQL:INSERT INTO `letters` ( `username`,`word`,`table-id`,`userid`) VALUES ( 'test', 'sdf', '24', '24', '') SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1 in C:\xampp\htdocs\mymessenger\vendor\workerman\mysql\src\Connection.php:1770
+Stack trace:
+#0 C:\xampp\htdocs\mymessenger\vendor\workerman\mysql\src\Connection.php(1828): Workerman\MySQL\Connection->execute('INSERT INTO `le...', NULL)
+#1 C:\xampp\htdocs\mymessenger\socket\server.php(31): Workerman\MySQL\Connection->query('INSERT INTO `le...')
+#2 C:\xampp\htdocs\mymessenger\vendor\workerman\workerman\Connection\TcpConnection.php(658): {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#3 C:\xampp\htdocs\mymessenger\vendor\workerman\workerman\Events\Select.php(294): Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#4 C:\xampp\htdocs\mymessenger\vendor\workerman\workerman\Worker.php(2382): Workerman\Events\Select->loop()
+#5 C:\xampp\htdocs\mymessenger\vendor\workerman\workerman\Worker.php(1353): Workerman\Worker->run()
+#6 C:\xampp\htdocs\mymessenger\vendor\workerman\workerman\Worker.php(1296): Workerman\Worker::forkWorkersForWindows()
+#7 C:\xampp\htdocs\mymessenger\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#8 C:\xampp\htdocs\mymessenger\socket\server.php(47): Workerman\Worker::runAll()
+#9 {main}
+2019-12-12 16:39:11 pid:1 Worker process terminated
